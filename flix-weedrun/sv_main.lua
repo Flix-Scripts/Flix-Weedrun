@@ -9,7 +9,7 @@ function sendDiscordWebhook(message)
     end, 'POST', json.encode(data), { ['Content-Type'] = 'application/json' })
 end
 
-lib.callback.register('huumekaupat:reward', function(source)
+lib.callback.register('weedrun:reward', function(source)
     local itemAmount = math.random(Config.Cannabis['mincannabis'], Config.Cannabis['maxcannabis'])
     local moneyAmount = math.random(Config.Cannabis['minprice'], Config.Cannabis['maxprice'])
     exports.ox_inventory:RemoveItem(source, 'cannabis', itemAmount)
