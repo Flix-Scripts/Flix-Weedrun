@@ -5,6 +5,7 @@ https://discord.gg/wcmjgjS23b
 Weedrun script made by: Flix. Earn money by selling some cannabis
 
 # Features
+- Add your webhook to sv_main.lua for logs
 - Script uses oxtarget
 - You can change almost anything using config.lua
 - Edit language via config.lua
