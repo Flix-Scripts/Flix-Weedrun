@@ -15,3 +15,6 @@ Weedrun script made by: Flix. Earn money by selling some cannabis
 - ox_lib
 - ox_inventory
 - ps-dispatch (optional)
+
+# Item 
+You have to create "cannabis" item for this script to work or you can change item in cl_main.lua and sv_main.lua
