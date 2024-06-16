@@ -2,11 +2,11 @@ fx_version('cerulean')
 games({ 'gta5' })
 
 client_scripts{
-    'cl_*.lua'
+    'cl_main.lua'
 }
 
 server_scripts{
-    'sv_*.lua'
+    'sv_main.lua'
 }
 
 shared_scripts{
@@ -18,4 +18,4 @@ lua54 'yes'
 
 author 'Flix(flixireielireiflix)'
 
-version '1.0.0'
+version '1.0.1'
