@@ -1,3 +1,6 @@
+# Discord
+https://discord.gg/wcmjgjS23b
+
 # Flix-Weedrun
 Weedrun script made by: Flix. Earn money by selling some cannabis
 
