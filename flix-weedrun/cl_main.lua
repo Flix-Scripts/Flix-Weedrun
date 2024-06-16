@@ -75,9 +75,9 @@ local function OstoTarget()
             description = Config.Language['deliverdropoff2'],
             type = 'success'
         })
-        Wait(7000)
+        Wait(15000)
         DeletePed(kauppias)
-        Wait(30000)
+        Wait(20000)
         Randomsijainti()
         else
         lib.notify({
@@ -91,7 +91,7 @@ local function OstoTarget()
         FreezeEntityPosition(kauppias, false)
         SetEntityInvincible(kauppias, false)
 	    SetPedAsNoLongerNeeded(kauppias)
-        Wait(10000)
+        Wait(15000)
         DeletePed(kauppias)
     end
 end
@@ -105,7 +105,7 @@ local function OstoTarget2()
     exports.ox_target:disableTargeting(false)
     RemoveBlip(KannabisBlip)
     SetPedAsNoLongerNeeded(kauppias)
-    Wait(5000)
+    Wait(15000)
     DeletePed(kauppias)
 end
 -- Buyer
