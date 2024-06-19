@@ -10,6 +10,8 @@ Config.Language = {
     ['startrun'] = 'Start weedrun',
     ['startdesc'] = 'I will soon send you the location where you take the cannabis',
     ['logs'] = 'Player **%s** sold **%s** cannabis for **%s**$ date:** %s**.'
+    ['alreadyactive'] = 'You already have active weedrun',
+    ['stoppedrun'] = 'You stopped your active weedrun'
 }
 
 Config.Blip = {
