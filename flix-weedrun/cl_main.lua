@@ -1,3 +1,5 @@
+local active = false
+
 -- Buyer spawn etc.
 function Randomize()
     lib.notify({
@@ -103,6 +105,11 @@ local function BuyerTarget2()
     exports.ox_target:removeLocalEntity(buyer, 'weedrunbuyera')
     Wait(100)
     exports.ox_target:disableTargeting(false)
+    lib.notify({
+        title = Config.Language['notifytitle'],
+        description = Config.Language['stoppedrun'],
+        type = 'info'
+    })
     RemoveBlip(CannabisBlip)
     SetPedAsNoLongerNeeded(buyer)
     Wait(15000)
@@ -126,6 +133,7 @@ end
             distance = 2,
             onSelect = function()
                 BuyerTarget2()
+		active = false
             end
         }})
     end
@@ -161,6 +169,13 @@ CreateThread(function()
             icon = 'fa-regular fa-comments',
             distance = 2,
             onSelect = function()
+		if active then 
+                    lib.notify({
+                        title = Config.Language['notifytitle'],
+                        description = Config.Language['alreadyactive'],
+                        type = 'error'})
+               		return end
+	            active = true
                 lib.notify({
                     title = Config.Language['notifytitle'],
                     description = Config.Language['startdesc'],
